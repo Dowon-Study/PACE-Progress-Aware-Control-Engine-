@@ -1,0 +1,43 @@
+{
+ "label": "s12_realai",
+ "ai_csv": "docs/benchmarks/runs/s12_ai_gpu.ai.csv",
+ "ctrl": "docs/benchmarks/runs/s12_ai_gpu.csv",
+ "n_ai_rows": 230,
+ "A3_infer_ms": {
+  "n": 230,
+  "unit": "ms",
+  "min": 6.128737,
+  "avg": 6.459625052173914,
+  "p50": 6.414263500000001,
+  "p99": 6.95833258,
+  "p999": 6.963175574,
+  "max": 6.963678
+ },
+ "A4_period_ms": {
+  "n": 229,
+  "unit": "ms",
+  "min": 90.763928,
+  "avg": 99.95044393886462,
+  "p50": 99.99259,
+  "p99": 106.15440644,
+  "p999": 106.78581922400001,
+  "max": 106.933835
+ },
+ "A6_e2e_us": {
+  "n": 149,
+  "unit": "us",
+  "min": 8631.758,
+  "avg": 10262.36989261745,
+  "p50": 9645.626,
+  "p99": 15166.76948000001,
+  "p999": 19961.12015600002,
+  "max": 20710.674,
+  "basis": "t_cmd − ai_t_capture"
+ },
+ "A6_decomposition_ms": {
+  "capture→infer_start_ms": 2.8751283304347828,
+  "infer_ms": 6.459625052173914,
+  "infer_end→publish_ms": 0.39008253478260874,
+  "publish→first_apply_ms": 0.4944743691275168
+ }
+}

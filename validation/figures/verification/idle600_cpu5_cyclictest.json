@@ -1,0 +1,20 @@
+{
+ "label": "idle600_cpu5",
+ "source": "validation/raw/20261010_rt_ccx_idle_600s_r1.txt",
+ "kind": "cyclictest",
+ "A2": {
+  "n": 599969,
+  "unit": "us",
+  "min": 3.0,
+  "avg": 3.8851490660350785,
+  "p50": 4.0,
+  "p99": 5.0,
+  "p999": 7.0,
+  "max": 17.0,
+  "overflow": 0,
+  "threshold": 100.0,
+  "over": 0,
+  "over_ratio": 0.0,
+  "thread": 5
+ }
+}

@@ -1,0 +1,17 @@
+# PAC 2026 PACE — Python 환경 (시뮬레이션 / 학습 / 분석)
+mujoco==3.15.0
+numpy
+scipy
+matplotlib
+pandas
+pyyaml
+onnx
+onnxruntime
+torch
+torchvision
+tqdm
+ipykernel
+jupyter
+pytest
+opencv-python-headless   # 작은 눈 (고전 용접선 검출)
+ruckig                   # 저크 제한 재겨냥 블렌딩 / 비교 기준선

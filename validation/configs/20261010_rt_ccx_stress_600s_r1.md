@@ -1,0 +1,17 @@
+# 측정 기록 양식 (configs/ 에 측정 1건당 1파일, 파일명은 raw 와 동일하게)
+
+- 날짜/시각: 2026-10-10T05:17:11+09:00
+- 측정자:
+- 플랫폼 버전 (git hash / 전달받은 파일명):
+- 커널: `uname -r` → 6.8.1-1061-realtime
+- 커널 파라미터: `cat /proc/cmdline` →
+- governor: performance
+- 격리 조건: ccx
+- 부하 조건: stress
+  - 부하 명령 (stress-ng 옵션, AI 실행 명령 등):
+- 지속시간: 600s
+- 회차: r1
+- 측정 명령: `cyclictest -m -S -p 99 -i 1000 -h 400 -q -a 4 -t 1 -D 600`
+- 동시에 실행 중이던 다른 프로그램:
+- 결과 파일: raw/20261010_rt_ccx_stress_600s_r1.txt
+- 특이사항 (튄 값, 중단, 재시작 등):

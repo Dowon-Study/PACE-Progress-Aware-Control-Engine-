@@ -1,0 +1,22 @@
+{
+ "label": "stress600_worst",
+ "source": "validation/raw/20261010_rt_ccx_stress_600s_r1.txt",
+ "kind": "cyclictest",
+ "A2": {
+  "n": 599824,
+  "unit": "us",
+  "min": 3.0,
+  "avg": 15.179693009437784,
+  "p50": 10.0,
+  "p99": 73.0,
+  "p999": 101.0,
+  "max": 495.0,
+  "overflow": 1,
+  "threshold": 100.0,
+  "over": 612,
+  "over_ratio": 0.0010202992877910854,
+  "thread": "worst of 24 (col 23)",
+  "max_source": "footer(# Max Latencies)",
+  "over_threads": 15
+ }
+}

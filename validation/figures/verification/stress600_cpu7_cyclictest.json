@@ -1,0 +1,20 @@
+{
+ "label": "stress600_cpu7",
+ "source": "validation/raw/20261010_rt_ccx_stress_600s_r1.txt",
+ "kind": "cyclictest",
+ "A2": {
+  "n": 599944,
+  "unit": "us",
+  "min": 3.0,
+  "avg": 15.022538770285227,
+  "p50": 9.0,
+  "p99": 72.0,
+  "p999": 104.0,
+  "max": 161.0,
+  "overflow": 0,
+  "threshold": 100.0,
+  "over": 846,
+  "over_ratio": 0.001410131612283813,
+  "thread": 7
+ }
+}

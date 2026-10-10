@@ -1,0 +1,153 @@
+{
+ "label": "s8_halfault1s",
+ "source": "docs/benchmarks/runs/s8_stop_fault_short_ur5e.csv",
+ "format": "pace",
+ "meta": {},
+ "A1": {
+  "n": 30000,
+  "miss": 0,
+  "miss_ratio": 0.0,
+  "miss_iters": [],
+  "skipped_ticks": 0,
+  "pass": true
+ },
+ "A2": {
+  "n": 30000,
+  "unit": "us",
+  "min": 4.983,
+  "avg": 6.2103701000000004,
+  "p50": 6.171,
+  "p99": 7.538009999999999,
+  "p999": 8.489015000000059,
+  "max": 11.297,
+  "threshold": 100.0,
+  "over": 0,
+  "over_ratio": 0.0,
+  "pass": true
+ },
+ "loop_exec": {
+  "exec": {
+   "n": 30000,
+   "unit": "us",
+   "min": 1.032,
+   "avg": 8.6551835,
+   "p50": 9.168,
+   "p99": 10.851089999999987,
+   "p999": 11.67201000000004,
+   "max": 18.124
+  },
+  "stages_max_us": {
+   "read": 1.1,
+   "select": 0.0,
+   "validate": 1.8,
+   "splice": 10.5,
+   "pace": 0.0,
+   "command": 0.7,
+   "monitor": 0.6,
+   "write": 15.0,
+   "log": 1.0
+  }
+ },
+ "A5": {
+  "n": 0,
+  "basis": "none"
+ },
+ "A6": {
+  "n": 0,
+  "basis": "ai_t_capture_ns 없음 → 측정 불가 (플랫폼 로그에 캡처 시각 필요)"
+ },
+ "B1": {
+  "reject_ticks": 0,
+  "reasons": {},
+  "by_group": {},
+  "expired_used": 0,
+  "expired_used_note": "유효기간 지난 결과 사용 횟수. 현재 포맷은 valid_until 이 로그에 없어 검증기 EXPIRED 거부 수로 대신 본다"
+ },
+ "B3": {
+  "segments": [
+   {
+    "state": "recover",
+    "t0_s": 0.0,
+    "t1_s": 2.999,
+    "dur_ms": 3000.0,
+    "iter0": 0
+   },
+   {
+    "state": "fresh",
+    "t0_s": 3.0,
+    "t1_s": 10.039,
+    "dur_ms": 7040.0,
+    "iter0": 3000
+   },
+   {
+    "state": "hold",
+    "t0_s": 10.04,
+    "t1_s": 10.434,
+    "dur_ms": 395.0000000000001,
+    "iter0": 10040
+   },
+   {
+    "state": "stop",
+    "t0_s": 10.435,
+    "t1_s": 11.061,
+    "dur_ms": 626.9999999999994,
+    "iter0": 10435
+   },
+   {
+    "state": "recover",
+    "t0_s": 11.062,
+    "t1_s": 11.56,
+    "dur_ms": 499.00000000000114,
+    "iter0": 11062
+   },
+   {
+    "state": "fresh",
+    "t0_s": 11.561,
+    "t1_s": 23.812,
+    "dur_ms": 12252.000000000002,
+    "iter0": 11561
+   },
+   {
+    "state": "hold",
+    "t0_s": 23.813,
+    "t1_s": 29.999,
+    "dur_ms": 6187.0,
+    "iter0": 23813
+   }
+  ],
+  "n_abnormal_segments": 5,
+  "a1_miss_during_abnormal": 0,
+  "fault_t0_s": 10.0,
+  "detect_ms": 39.99999999999915,
+  "back_to_fresh_ms": 1561.0
+ },
+ "B2": {
+  "basis": "q_cmd 3차 차분 (명령 미분)",
+  "jerk_rad_s3": {
+   "n": 29997,
+   "unit": "rad/s³",
+   "min": 0.0,
+   "avg": 1754.7971443974639,
+   "p50": 357.62786865234375,
+   "p99": 29444.694519042965,
+   "p999": 30040.74096679687,
+   "max": 30040.74096679687
+  },
+  "track_err_rad": {
+   "n": 30000,
+   "unit": "rad",
+   "min": 0.0,
+   "avg": 0.0001524705366630466,
+   "p50": 2.4318695068359375e-05,
+   "p99": 0.0032991079986095274,
+   "p999": 0.00579688099026692,
+   "max": 0.006785720586776733
+  }
+ },
+ "state_ticks": {
+  "fresh": 19292,
+  "hold": 6582,
+  "recover": 3499,
+  "stop": 627
+ }
+}

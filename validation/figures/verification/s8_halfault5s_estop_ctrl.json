@@ -1,0 +1,132 @@
+{
+ "label": "s8_halfault5s_estop",
+ "source": "docs/benchmarks/runs/s8_stop_fault_ur5e.csv",
+ "format": "pace",
+ "meta": {},
+ "A1": {
+  "n": 30000,
+  "miss": 0,
+  "miss_ratio": 0.0,
+  "miss_iters": [],
+  "skipped_ticks": 0,
+  "pass": true
+ },
+ "A2": {
+  "n": 30000,
+  "unit": "us",
+  "min": 4.978,
+  "avg": 6.373368033333334,
+  "p50": 6.316,
+  "p99": 7.942009999999999,
+  "p999": 8.710015000000059,
+  "max": 12.706,
+  "threshold": 100.0,
+  "over": 0,
+  "over_ratio": 0.0,
+  "pass": true
+ },
+ "loop_exec": {
+  "exec": {
+   "n": 30000,
+   "unit": "us",
+   "min": 1.042,
+   "avg": 7.892675766666666,
+   "p50": 7.644,
+   "p99": 10.58,
+   "p999": 11.642010000000038,
+   "max": 69.39
+  },
+  "stages_max_us": {
+   "read": 4.5,
+   "select": 0.0,
+   "validate": 1.9,
+   "splice": 10.8,
+   "pace": 0.0,
+   "command": 0.7,
+   "monitor": 0.5,
+   "write": 66.9,
+   "log": 0.7
+  }
+ },
+ "A5": {
+  "n": 0,
+  "basis": "none"
+ },
+ "A6": {
+  "n": 0,
+  "basis": "ai_t_capture_ns 없음 → 측정 불가 (플랫폼 로그에 캡처 시각 필요)"
+ },
+ "B1": {
+  "reject_ticks": 0,
+  "reasons": {},
+  "by_group": {},
+  "expired_used": 0,
+  "expired_used_note": "유효기간 지난 결과 사용 횟수. 현재 포맷은 valid_until 이 로그에 없어 검증기 EXPIRED 거부 수로 대신 본다"
+ },
+ "B3": {
+  "segments": [
+   {
+    "state": "recover",
+    "t0_s": 0.0,
+    "t1_s": 2.999,
+    "dur_ms": 3000.0,
+    "iter0": 0
+   },
+   {
+    "state": "fresh",
+    "t0_s": 3.0,
+    "t1_s": 10.066,
+    "dur_ms": 7067.000000000001,
+    "iter0": 3000
+   },
+   {
+    "state": "hold",
+    "t0_s": 10.067,
+    "t1_s": 10.44,
+    "dur_ms": 373.9999999999993,
+    "iter0": 10067
+   },
+   {
+    "state": "stop",
+    "t0_s": 10.441,
+    "t1_s": 29.999,
+    "dur_ms": 19559.0,
+    "iter0": 10441
+   }
+  ],
+  "n_abnormal_segments": 3,
+  "a1_miss_during_abnormal": 0,
+  "fault_t0_s": 10.0,
+  "detect_ms": 67.00000000000017,
+  "back_to_fresh_ms": null
+ },
+ "B2": {
+  "basis": "q_cmd 3차 차분 (명령 미분)",
+  "jerk_rad_s3": {
+   "n": 29997,
+   "unit": "rad/s³",
+   "min": 0.0,
+   "avg": 773.0323235011083,
+   "p50": 0.0,
+   "p99": 22768.97430419922,
+   "p999": 30040.74096679687,
+   "max": 30040.74096679687
+  },
+  "track_err_rad": {
+   "n": 30000,
+   "unit": "rad",
+   "min": 0.0,
+   "avg": 0.00018973185820789999,
+   "p50": 5.14984130859375e-05,
+   "p99": 0.004209771156311014,
+   "p999": 0.006755502700805785,
+   "max": 0.007756829261779785
+  }
+ },
+ "state_ticks": {
+  "stop": 19559,
+  "fresh": 7067,
+  "recover": 3000,
+  "hold": 374
+ }
+}

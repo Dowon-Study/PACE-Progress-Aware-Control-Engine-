@@ -1,0 +1,5 @@
+<library path="pace_mujoco_hardware">
+  <class name="pace_mujoco_hardware/PaceMujocoSystem" type="pace_mujoco_hardware::PaceMujocoSystem" base_class_type="hardware_interface::SystemInterface">
+    <description>PACE shared-memory lockstep MuJoCo simulator exposed as a ros2_control system.</description>
+  </class>
+</library>

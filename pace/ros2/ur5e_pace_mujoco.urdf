@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- ros2_control 경로로 PACE MuJoCo 락스텝 시뮬을 구동하는 URDF (플러그인 pace_mujoco_hardware/PaceMujocoSystem, pace_sim 이 먼저 떠 있어야 함). 한계값은 <limit> 에서 HAL 공통 데이터 구조로 번역된다. -->
+<robot name="ur5e_pace_mujoco">
+  <link name="base_link"/>
+  <link name="shoulder_link"/><link name="upper_arm_link"/><link name="forearm_link"/><link name="wrist_1_link"/><link name="wrist_2_link"/><link name="wrist_3_link"/>
+  <joint name="shoulder_pan_joint" type="revolute"><parent link="base_link"/><child link="shoulder_link"/><axis xyz="0 0 1"/><limit lower="-6.2832" upper="6.2832" velocity="2.0" effort="150"/></joint>
+  <joint name="shoulder_lift_joint" type="revolute"><parent link="shoulder_link"/><child link="upper_arm_link"/><axis xyz="0 1 0"/><limit lower="-6.2832" upper="6.2832" velocity="2.0" effort="150"/></joint>
+  <joint name="elbow_joint" type="revolute"><parent link="upper_arm_link"/><child link="forearm_link"/><axis xyz="0 1 0"/><limit lower="-3.1416" upper="3.1416" velocity="2.5" effort="150"/></joint>
+  <joint name="wrist_1_joint" type="revolute"><parent link="forearm_link"/><child link="wrist_1_link"/><axis xyz="0 1 0"/><limit lower="-6.2832" upper="6.2832" velocity="3.0" effort="28"/></joint>
+  <joint name="wrist_2_joint" type="revolute"><parent link="wrist_1_link"/><child link="wrist_2_link"/><axis xyz="0 0 1"/><limit lower="-6.2832" upper="6.2832" velocity="3.0" effort="28"/></joint>
+  <joint name="wrist_3_joint" type="revolute"><parent link="wrist_2_link"/><child link="wrist_3_link"/><axis xyz="0 1 0"/><limit lower="-6.2832" upper="6.2832" velocity="3.0" effort="28"/></joint>
+  <ros2_control name="ur5e_pace_mujoco_system" type="system">
+    <hardware>
+      <plugin>pace_mujoco_hardware/PaceMujocoSystem</plugin>
+      <param name="simlink">/pace_sim</param>
+      <param name="read_wcet_us">30</param>
+      <param name="write_wcet_us">30</param>
+    </hardware>
+    <joint name="shoulder_pan_joint"><command_interface name="position"/><command_interface name="velocity"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
+    <joint name="shoulder_lift_joint"><command_interface name="position"/><command_interface name="velocity"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
+    <joint name="elbow_joint"><command_interface name="position"/><command_interface name="velocity"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
+    <joint name="wrist_1_joint"><command_interface name="position"/><command_interface name="velocity"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
+    <joint name="wrist_2_joint"><command_interface name="position"/><command_interface name="velocity"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
+    <joint name="wrist_3_joint"><command_interface name="position"/><command_interface name="velocity"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
+  </ros2_control>
+</robot>

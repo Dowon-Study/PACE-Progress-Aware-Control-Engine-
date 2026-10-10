@@ -1,0 +1,23 @@
+{
+ "name": "s5_timeidx_normal_ep0",
+ "episode": 0,
+ "policy": "timeidx",
+ "ticks": 32000,
+ "lat_err_mm_mean": 0.2497506442966096,
+ "lat_err_mm_p95": 0.47558563308818114,
+ "lat_err_mm_max": 0.5009111554080724,
+ "z_err_mm_mean": 0.0003997818275316266,
+ "jerk_max_rad_s3": 30040.7421875,
+ "jerk_p99_rad_s3": 3337.860107421875,
+ "acc_max_rad_s2": 15.020370483398438,
+ "rejects": 0,
+ "no_overlap": 0,
+ "splices": 251,
+ "stop_ticks_mid": 1879,
+ "slow_ticks": 640,
+ "weld_ticks": 21041,
+ "e2e_ms_p50": 60.392816,
+ "e2e_ms_max": 60.400874,
+ "wake_max_us": 18.6,
+ "exec_max_us": 13.5
+}

@@ -1,0 +1,82 @@
+{
+ "label": "loop_idle",
+ "source": "/home/kwuser/바탕화면/PAC_PhysicalAI/docs/benchmarks/loop_rt_ccx_idle_20s.csv",
+ "format": "pace",
+ "meta": {},
+ "A1": {
+  "n": 20000,
+  "miss": 0,
+  "miss_ratio": 0.0,
+  "miss_iters": [],
+  "skipped_ticks": 0,
+  "pass": true
+ },
+ "A2": {
+  "n": 20000,
+  "unit": "us",
+  "min": 5.335,
+  "avg": 6.4832992,
+  "p50": 6.415,
+  "p99": 7.838,
+  "p999": 8.625038000000146,
+  "max": 16.732,
+  "threshold": 100.0,
+  "over": 0,
+  "over_ratio": 0.0,
+  "pass": true
+ },
+ "loop_exec": {
+  "exec": {
+   "n": 20000,
+   "unit": "us",
+   "min": 0.982,
+   "avg": 5.827954050000001,
+   "p50": 5.801,
+   "p99": 6.732009999999999,
+   "p999": 7.264040000000154,
+   "max": 14.938
+  },
+  "stages_max_us": {
+   "read": 0.8,
+   "select": 0.3,
+   "validate": 0.0,
+   "splice": 0.0,
+   "pace": 0.0,
+   "command": 1.0,
+   "monitor": 0.0,
+   "write": 12.9,
+   "log": 0.5
+  }
+ },
+ "A5": {
+  "n": 0,
+  "basis": "none"
+ },
+ "A6": {
+  "n": 0,
+  "basis": "ai_t_capture_ns 없음 → 측정 불가 (플랫폼 로그에 캡처 시각 필요)"
+ },
+ "B1": {
+  "reject_ticks": 0,
+  "reasons": {},
+  "by_group": {},
+  "expired_used": 0,
+  "expired_used_note": "유효기간 지난 결과 사용 횟수. 현재 포맷은 valid_until 이 로그에 없어 검증기 EXPIRED 거부 수로 대신 본다"
+ },
+ "B3": {
+  "segments": [
+   {
+    "state": "fresh",
+    "t0_s": 0.0,
+    "t1_s": 19.999,
+    "dur_ms": 20000.0,
+    "iter0": 0
+   }
+  ],
+  "n_abnormal_segments": 0,
+  "a1_miss_during_abnormal": 0
+ },
+ "state_ticks": {
+  "fresh": 20000
+ }
+}

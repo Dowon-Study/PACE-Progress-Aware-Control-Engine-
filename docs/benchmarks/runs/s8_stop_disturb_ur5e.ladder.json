@@ -1,0 +1,26 @@
+{
+ "t_trigger": 10.216000000000001,
+ "trigger_names": [
+  "WORKSPACE",
+  "TRACK_ERR"
+ ],
+ "t_arc_off": 10.216000000000001,
+ "arc_off_latency_ms": 0.0,
+ "t_decel_start": 10.216000000000001,
+ "t_hold": null,
+ "t_estop": null,
+ "t_resume": 10.558,
+ "estop_latched": false,
+ "tool_speed_max_mps": 1.2943773070667348,
+ "decel_jerk_p99": 8055.634691012937,
+ "decel_peak_decel_mps2": 274.4901043362401,
+ "mode_ticks": {
+  "NORMAL": 19614,
+  "HOLD": 7046,
+  "RECOVER": 3340
+ },
+ "stop_level_ticks": {
+  "0": 29658,
+  "1": 342
+ }
+}

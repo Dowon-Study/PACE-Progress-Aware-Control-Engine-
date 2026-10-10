@@ -1,0 +1,56 @@
+[
+ {
+  "cond": "none",
+  "wake_p99_us": 7,
+  "wake_max_us": 12.3,
+  "exec_p99_us": 6,
+  "exec_max_us": 18.1,
+  "chunks": 0,
+  "infer_p50_max_ms": ""
+ },
+ {
+  "cond": "fake",
+  "wake_p99_us": 7,
+  "wake_max_us": 12.4,
+  "exec_p99_us": 7,
+  "exec_max_us": 15.6,
+  "chunks": 150,
+  "infer_p50_max_ms": ""
+ },
+ {
+  "cond": "fake_stress",
+  "wake_p99_us": 11,
+  "wake_max_us": 29.5,
+  "exec_p99_us": 2,
+  "exec_max_us": 12.1,
+  "chunks": 151,
+  "infer_p50_max_ms": ""
+ },
+ {
+  "cond": "ai_gpu",
+  "wake_p99_us": 7,
+  "wake_max_us": 13.1,
+  "exec_p99_us": 7,
+  "exec_max_us": 16.7,
+  "chunks": 120,
+  "infer_p50_max_ms": "6.4/7.4"
+ },
+ {
+  "cond": "ai_cpu",
+  "wake_p99_us": 7,
+  "wake_max_us": 10.3,
+  "exec_p99_us": 7,
+  "exec_max_us": 17.0,
+  "chunks": 148,
+  "infer_p50_max_ms": "14.8/485.9"
+ },
+ {
+  "cond": "ai_gpu_stress",
+  "wake_p99_us": 10,
+  "wake_max_us": 96.0,
+  "exec_p99_us": 8,
+  "exec_max_us": 49.4,
+  "chunks": 111,
+  "infer_p50_max_ms": "7.0/9.3"
+ }
+]

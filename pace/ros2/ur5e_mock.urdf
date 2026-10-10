@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- ros2_control 호환성 시험용 URDF: UR5e 관절 6개를 mock_components/GenericSystem 으로 (명령을 그대로 상태로 되돌리는 가짜 하드웨어).
+     한계값은 <limit> 에서 HAL 공통 데이터 구조로 번역된다. -->
+<robot name="ur5e_mock">
+  <link name="base_link"/>
+  <link name="shoulder_link"/><link name="upper_arm_link"/><link name="forearm_link"/><link name="wrist_1_link"/><link name="wrist_2_link"/><link name="wrist_3_link"/>
+  <joint name="shoulder_pan_joint" type="revolute"><parent link="base_link"/><child link="shoulder_link"/><axis xyz="0 0 1"/><limit lower="-6.2832" upper="6.2832" velocity="2.0" effort="150"/></joint>
+  <joint name="shoulder_lift_joint" type="revolute"><parent link="shoulder_link"/><child link="upper_arm_link"/><axis xyz="0 1 0"/><limit lower="-6.2832" upper="6.2832" velocity="2.0" effort="150"/></joint>
+  <joint name="elbow_joint" type="revolute"><parent link="upper_arm_link"/><child link="forearm_link"/><axis xyz="0 1 0"/><limit lower="-3.1416" upper="3.1416" velocity="2.5" effort="150"/></joint>
+  <joint name="wrist_1_joint" type="revolute"><parent link="forearm_link"/><child link="wrist_1_link"/><axis xyz="0 1 0"/><limit lower="-6.2832" upper="6.2832" velocity="3.0" effort="28"/></joint>
+  <joint name="wrist_2_joint" type="revolute"><parent link="wrist_1_link"/><child link="wrist_2_link"/><axis xyz="0 0 1"/><limit lower="-6.2832" upper="6.2832" velocity="3.0" effort="28"/></joint>
+  <joint name="wrist_3_joint" type="revolute"><parent link="wrist_2_link"/><child link="wrist_3_link"/><axis xyz="0 1 0"/><limit lower="-6.2832" upper="6.2832" velocity="3.0" effort="28"/></joint>
+  <ros2_control name="ur5e_mock_system" type="system">
+    <hardware>
+      <plugin>mock_components/GenericSystem</plugin>
+      <param name="read_wcet_us">20</param>
+      <param name="write_wcet_us">20</param>
+    </hardware>
+    <joint name="shoulder_pan_joint"><command_interface name="position"/><state_interface name="position"><param name="initial_value">2.5907</param></state_interface><state_interface name="velocity"/></joint>
+    <joint name="shoulder_lift_joint"><command_interface name="position"/><state_interface name="position"><param name="initial_value">-1.5383</param></state_interface><state_interface name="velocity"/></joint>
+    <joint name="elbow_joint"><command_interface name="position"/><state_interface name="position"><param name="initial_value">1.6162</param></state_interface><state_interface name="velocity"/></joint>
+    <joint name="wrist_1_joint"><command_interface name="position"/><state_interface name="position"><param name="initial_value">-1.6484</param></state_interface><state_interface name="velocity"/></joint>
+    <joint name="wrist_2_joint"><command_interface name="position"/><state_interface name="position"><param name="initial_value">-1.5711</param></state_interface><state_interface name="velocity"/></joint>
+    <joint name="wrist_3_joint"><command_interface name="position"/><state_interface name="position"><param name="initial_value">-2.1217</param></state_interface><state_interface name="velocity"/></joint>
+  </ros2_control>
+</robot>

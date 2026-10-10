@@ -1,0 +1,21 @@
+{
+ "label": "rt_stress",
+ "source": "/home/kwuser/바탕화면/PAC_PhysicalAI/docs/benchmarks/rt_ccx_stress.txt",
+ "kind": "cyclictest",
+ "A2": {
+  "n": 60000,
+  "unit": "us",
+  "min": 5.0,
+  "avg": 6.412816666666667,
+  "p50": 6.0,
+  "p99": 8.0,
+  "p999": 11.0,
+  "max": 20.0,
+  "overflow": 0,
+  "threshold": 100.0,
+  "over": 0,
+  "over_ratio": 0.0,
+  "thread": "worst of 1 (col 0)",
+  "over_threads": 0
+ }
+}

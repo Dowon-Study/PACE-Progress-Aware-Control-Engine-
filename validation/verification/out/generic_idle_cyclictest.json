@@ -1,0 +1,22 @@
+{
+ "label": "generic_idle",
+ "source": "/home/kwuser/바탕화면/PAC_PhysicalAI/docs/benchmarks/baseline_generic_idle.txt",
+ "kind": "cyclictest",
+ "A2": {
+  "n": 29947,
+  "unit": "us",
+  "min": 2.0,
+  "avg": 5.237939960332135,
+  "p50": 3.0,
+  "p99": 215.0,
+  "p999": 399.0,
+  "max": 592.0,
+  "overflow": 200,
+  "threshold": 100.0,
+  "over": 563,
+  "over_ratio": 0.018799879787624804,
+  "thread": "worst of 32 (col 14)",
+  "max_source": "footer(# Max Latencies)",
+  "over_threads": 19
+ }
+}

@@ -1,0 +1,132 @@
+[
+ {
+  "label": "fake",
+  "stats": {
+   "n": 20000,
+   "unit": "us",
+   "min": 5.25,
+   "avg": 6.2428714,
+   "p50": 6.193,
+   "p99": 7.316009999999999,
+   "p999": 8.530020000000077,
+   "max": 12.4,
+   "threshold": 100.0,
+   "over": 0,
+   "over_ratio": 0.0,
+   "pass": true
+  },
+  "a1": {
+   "n": 20000,
+   "miss": 0,
+   "miss_ratio": 0.0,
+   "miss_iters": [],
+   "skipped_ticks": 0,
+   "pass": true
+  },
+  "source": "docs/benchmarks/runs/s11_load_fake.csv"
+ },
+ {
+  "label": "fake_stress",
+  "stats": {
+   "n": 20000,
+   "unit": "us",
+   "min": 4.255,
+   "avg": 7.3904334,
+   "p50": 7.287,
+   "p99": 11.319019999999998,
+   "p999": 18.491105000000402,
+   "max": 29.455,
+   "threshold": 100.0,
+   "over": 0,
+   "over_ratio": 0.0,
+   "pass": true
+  },
+  "a1": {
+   "n": 20000,
+   "miss": 0,
+   "miss_ratio": 0.0,
+   "miss_iters": [],
+   "skipped_ticks": 0,
+   "pass": true
+  },
+  "source": "docs/benchmarks/runs/s11_load_fake_stress.csv"
+ },
+ {
+  "label": "ai_gpu",
+  "stats": {
+   "n": 20000,
+   "unit": "us",
+   "min": 5.147,
+   "avg": 6.37775595,
+   "p50": 6.32,
+   "p99": 7.542029999999995,
+   "p999": 8.422015000000059,
+   "max": 13.088,
+   "threshold": 100.0,
+   "over": 0,
+   "over_ratio": 0.0,
+   "pass": true
+  },
+  "a1": {
+   "n": 20000,
+   "miss": 0,
+   "miss_ratio": 0.0,
+   "miss_iters": [],
+   "skipped_ticks": 0,
+   "pass": true
+  },
+  "source": "docs/benchmarks/runs/s11_load_ai_gpu.csv"
+ },
+ {
+  "label": "ai_cpu",
+  "stats": {
+   "n": 20000,
+   "unit": "us",
+   "min": 5.376,
+   "avg": 6.3610837,
+   "p50": 6.308,
+   "p99": 7.438049999999992,
+   "p999": 8.140002000000008,
+   "max": 10.301,
+   "threshold": 100.0,
+   "over": 0,
+   "over_ratio": 0.0,
+   "pass": true
+  },
+  "a1": {
+   "n": 20000,
+   "miss": 0,
+   "miss_ratio": 0.0,
+   "miss_iters": [],
+   "skipped_ticks": 0,
+   "pass": true
+  },
+  "source": "docs/benchmarks/runs/s11_load_ai_cpu.csv"
+ },
+ {
+  "label": "ai_gpu_stress",
+  "stats": {
+   "n": 20000,
+   "unit": "us",
+   "min": 5.411,
+   "avg": 7.1351148,
+   "p50": 7.009,
+   "p99": 10.176019999999998,
+   "p999": 16.1003120000012,
+   "max": 96.045,
+   "threshold": 100.0,
+   "over": 0,
+   "over_ratio": 0.0,
+   "pass": true
+  },
+  "a1": {
+   "n": 20000,
+   "miss": 0,
+   "miss_ratio": 0.0,
+   "miss_iters": [],
+   "skipped_ticks": 0,
+   "pass": true
+  },
+  "source": "docs/benchmarks/runs/s11_load_ai_gpu_stress.csv"
+ }
+]

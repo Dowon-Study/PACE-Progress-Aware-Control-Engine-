@@ -1,0 +1,29 @@
+{
+ "t_trigger": 10.031,
+ "trigger_names": [
+  "HAL_FAULT"
+ ],
+ "t_arc_off": 10.031,
+ "arc_off_latency_ms": 0.0,
+ "t_decel_start": 10.031,
+ "t_hold": 10.431000000000001,
+ "t_estop": 12.032,
+ "decel_duration_ms": 400.00000000000034,
+ "t_resume": null,
+ "estop_latched": true,
+ "tool_speed_max_mps": 0.17386190982410238,
+ "decel_jerk_p99": 476.01230030968566,
+ "decel_peak_decel_mps2": 0.9500910671304088,
+ "mode_ticks": {
+  "NORMAL": 7031,
+  "HOLD": 400,
+  "STOPPED": 19569,
+  "RECOVER": 3000
+ },
+ "stop_level_ticks": {
+  "0": 10031,
+  "1": 400,
+  "2": 1601,
+  "3": 17968
+ }
+}

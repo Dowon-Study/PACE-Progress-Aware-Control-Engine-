@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pace_mujoco_hardware</name>
+  <version>0.1.0</version>
+  <description>ros2_control hardware plugin for the PACE MuJoCo lockstep simulator</description>
+  <maintainer email="dowon98981@gmail.com">Physical100</maintainer>
+  <license>MIT</license>
+  <depend>hardware_interface</depend>
+  <depend>pluginlib</depend>
+  <export><hardware_interface plugin="${prefix}/pace_mujoco_hardware_plugin.xml"/></export>
+</package>

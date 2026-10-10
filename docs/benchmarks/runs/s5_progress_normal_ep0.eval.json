@@ -1,0 +1,23 @@
+{
+ "name": "s5_progress_normal_ep0",
+ "episode": 0,
+ "policy": "progress",
+ "ticks": 32000,
+ "lat_err_mm_mean": 0.00022683503877322762,
+ "lat_err_mm_p95": 0.000657961217833765,
+ "lat_err_mm_max": 0.03604787878572995,
+ "z_err_mm_mean": 0.0004571385061190285,
+ "jerk_max_rad_s3": 30040.7421875,
+ "jerk_p99_rad_s3": 8344.650390625,
+ "acc_max_rad_s2": 15.020370483398438,
+ "rejects": 0,
+ "no_overlap": 0,
+ "splices": 247,
+ "stop_ticks_mid": 2279,
+ "slow_ticks": 700,
+ "weld_ticks": 20857,
+ "e2e_ms_p50": 1.096124,
+ "e2e_ms_max": 1.168293,
+ "wake_max_us": 14.2,
+ "exec_max_us": 14.8
+}

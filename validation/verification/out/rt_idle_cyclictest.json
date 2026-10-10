@@ -1,0 +1,21 @@
+{
+ "label": "rt_idle",
+ "source": "/home/kwuser/바탕화면/PAC_PhysicalAI/docs/benchmarks/rt_ccx_idle.txt",
+ "kind": "cyclictest",
+ "A2": {
+  "n": 60000,
+  "unit": "us",
+  "min": 4.0,
+  "avg": 6.072166666666667,
+  "p50": 6.0,
+  "p99": 9.0,
+  "p999": 29.0,
+  "max": 76.0,
+  "overflow": 0,
+  "threshold": 100.0,
+  "over": 0,
+  "over_ratio": 0.0,
+  "thread": "worst of 1 (col 0)",
+  "over_threads": 0
+ }
+}

@@ -1,0 +1,144 @@
+{
+ "label": "s5_delay200ms",
+ "source": "docs/benchmarks/runs/s5_progress_d200_ep0.csv",
+ "format": "pace",
+ "meta": {},
+ "A1": {
+  "n": 32000,
+  "miss": 0,
+  "miss_ratio": 0.0,
+  "miss_iters": [],
+  "skipped_ticks": 0,
+  "pass": true
+ },
+ "A2": {
+  "n": 32000,
+  "unit": "us",
+  "min": 5.344,
+  "avg": 6.42841575,
+  "p50": 6.418,
+  "p99": 7.391,
+  "p999": 7.9310140000000535,
+  "max": 9.747,
+  "threshold": 100.0,
+  "over": 0,
+  "over_ratio": 0.0,
+  "pass": true
+ },
+ "loop_exec": {
+  "exec": {
+   "n": 32000,
+   "unit": "us",
+   "min": 1.132,
+   "avg": 5.9524026249999995,
+   "p50": 5.931,
+   "p99": 6.933,
+   "p999": 8.49601000000004,
+   "max": 14.297
+  },
+  "stages_max_us": {
+   "read": 1.0,
+   "select": 0.0,
+   "validate": 3.2,
+   "splice": 2.0,
+   "pace": 0.0,
+   "command": 0.5,
+   "monitor": 1.4,
+   "write": 11.7,
+   "log": 0.6
+  }
+ },
+ "A5": {
+  "n": 126,
+  "unit": "us",
+  "min": 996.226,
+  "avg": 173884.3234365079,
+  "p50": 220947.6905,
+  "p99": 250370.4665,
+  "p999": 250929.56462500003,
+  "max": 250980.45,
+  "basis": "t_cmd − chunk_t_gen (pace 포맷 근사: 공급자 지연 포함)",
+  "n_changes": 126
+ },
+ "A6": {
+  "n": 0,
+  "basis": "ai_t_capture_ns 없음 → 측정 불가 (플랫폼 로그에 캡처 시각 필요)"
+ },
+ "B1": {
+  "reject_ticks": 0,
+  "reasons": {},
+  "by_group": {},
+  "expired_used": 0,
+  "expired_used_note": "유효기간 지난 결과 사용 횟수. 현재 포맷은 valid_until 이 로그에 없어 검증기 EXPIRED 거부 수로 대신 본다"
+ },
+ "B3": {
+  "segments": [
+   {
+    "state": "stop",
+    "t0_s": 0.0,
+    "t1_s": 1.588,
+    "dur_ms": 1589.0,
+    "iter0": 0
+   },
+   {
+    "state": "recover",
+    "t0_s": 1.589,
+    "t1_s": 2.087,
+    "dur_ms": 499.0000000000002,
+    "iter0": 1589
+   },
+   {
+    "state": "fresh",
+    "t0_s": 2.088,
+    "t1_s": 27.252,
+    "dur_ms": 25164.999999999996,
+    "iter0": 2088
+   },
+   {
+    "state": "pacing",
+    "t0_s": 27.253,
+    "t1_s": 27.953,
+    "dur_ms": 700.9999999999993,
+    "iter0": 27253
+   },
+   {
+    "state": "stop",
+    "t0_s": 27.954,
+    "t1_s": 31.999,
+    "dur_ms": 4045.999999999998,
+    "iter0": 27954
+   }
+  ],
+  "n_abnormal_segments": 4,
+  "a1_miss_during_abnormal": 0
+ },
+ "B2": {
+  "basis": "q_cmd 3차 차분 (명령 미분)",
+  "jerk_rad_s3": {
+   "n": 31997,
+   "unit": "rad/s³",
+   "min": 0.0,
+   "avg": 476.08830464811336,
+   "p50": 238.41857910156247,
+   "p99": 7750.988006591848,
+   "p999": 30040.74096679687,
+   "max": 30040.74096679687
+  },
+  "track_err_rad": {
+   "n": 32000,
+   "unit": "rad",
+   "min": 0.0,
+   "avg": 4.0126552805304525e-05,
+   "p50": 9.5367431640625e-07,
+   "p99": 0.0007942950725555414,
+   "p999": 0.001357800662517574,
+   "max": 0.0015703439712524414
+  }
+ },
+ "state_ticks": {
+  "fresh": 25165,
+  "stop": 5635,
+  "pacing": 701,
+  "recover": 499
+ }
+}

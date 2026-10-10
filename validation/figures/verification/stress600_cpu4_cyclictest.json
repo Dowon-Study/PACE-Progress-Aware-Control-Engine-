@@ -1,0 +1,20 @@
+{
+ "label": "stress600_cpu4",
+ "source": "validation/raw/20261010_rt_ccx_stress_600s_r1.txt",
+ "kind": "cyclictest",
+ "A2": {
+  "n": 599969,
+  "unit": "us",
+  "min": 3.0,
+  "avg": 16.275245887704198,
+  "p50": 10.0,
+  "p99": 69.0,
+  "p999": 88.0,
+  "max": 208.0,
+  "overflow": 0,
+  "threshold": 100.0,
+  "over": 14,
+  "over_ratio": 2.3334538951179144e-05,
+  "thread": 4
+ }
+}

@@ -1,0 +1,42 @@
+<!-- 3단계 뼈대 검증용 간이 6축 팔. 위치 액추에이터 1:1, 툴 사이트 'tool'. 실제 시연 모델은 Menagerie UR5e/Panda 로 교체. -->
+<mujoco model="arm6_test">
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicitfast"/>
+  <default>
+    <joint type="hinge" damping="2" armature="0.05" limited="true" range="-3.1 3.1"/>
+    <geom type="capsule" size="0.03" rgba="0.6 0.6 0.7 1"/>
+    <position kp="300" kv="20" ctrlrange="-3.1 3.1"/>
+  </default>
+  <worldbody>
+    <light pos="0 0 3" dir="0 0 -1"/>
+    <geom type="plane" size="2 2 0.1" rgba="0.9 0.9 0.9 1"/>
+    <body name="l1" pos="0 0 0.1">
+      <joint name="j1" axis="0 0 1"/>
+      <geom fromto="0 0 0 0 0 0.15"/>
+      <body name="l2" pos="0 0 0.15">
+        <joint name="j2" axis="0 1 0"/>
+        <geom fromto="0 0 0 0 0 0.35"/>
+        <body name="l3" pos="0 0 0.35">
+          <joint name="j3" axis="0 1 0"/>
+          <geom fromto="0 0 0 0 0 0.3"/>
+          <body name="l4" pos="0 0 0.3">
+            <joint name="j4" axis="0 0 1"/>
+            <geom fromto="0 0 0 0 0 0.1"/>
+            <body name="l5" pos="0 0 0.1">
+              <joint name="j5" axis="0 1 0"/>
+              <geom fromto="0 0 0 0 0 0.1"/>
+              <body name="l6" pos="0 0 0.1">
+                <joint name="j6" axis="0 0 1"/>
+                <geom fromto="0 0 0 0 0 0.08" size="0.02"/>
+                <site name="tool" pos="0 0 0.1" size="0.01" rgba="1 0 0 1"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <position name="a1" joint="j1"/><position name="a2" joint="j2"/><position name="a3" joint="j3"/>
+    <position name="a4" joint="j4"/><position name="a5" joint="j5"/><position name="a6" joint="j6"/>
+  </actuator>
+</mujoco>

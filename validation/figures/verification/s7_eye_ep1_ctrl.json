@@ -1,0 +1,121 @@
+{
+ "label": "s7_eye_ep1",
+ "source": "docs/benchmarks/runs/s7_eye_ep1.csv",
+ "format": "pace",
+ "meta": {},
+ "A1": {
+  "n": 35000,
+  "miss": 0,
+  "miss_ratio": 0.0,
+  "miss_iters": [],
+  "skipped_ticks": 0,
+  "pass": true
+ },
+ "A2": {
+  "n": 35000,
+  "unit": "us",
+  "min": 5.146,
+  "avg": 6.384152571428572,
+  "p50": 6.32,
+  "p99": 7.754,
+  "p999": 8.564011000000042,
+  "max": 12.606,
+  "threshold": 100.0,
+  "over": 0,
+  "over_ratio": 0.0,
+  "pass": true
+ },
+ "loop_exec": {
+  "exec": {
+   "n": 35000,
+   "unit": "us",
+   "min": 2.806,
+   "avg": 8.704057514285715,
+   "p50": 9.237,
+   "p99": 11.0,
+   "p999": 11.983059000000226,
+   "max": 16.922
+  },
+  "stages_max_us": {
+   "read": 1.0,
+   "select": 0.0,
+   "validate": 1.7,
+   "splice": 10.5,
+   "pace": 0.0,
+   "command": 0.6,
+   "monitor": 0.5,
+   "write": 13.6,
+   "log": 0.9
+  }
+ },
+ "A5": {
+  "n": 0,
+  "basis": "none"
+ },
+ "A6": {
+  "n": 0,
+  "basis": "ai_t_capture_ns 없음 → 측정 불가 (플랫폼 로그에 캡처 시각 필요)"
+ },
+ "B1": {
+  "reject_ticks": 0,
+  "reasons": {},
+  "by_group": {},
+  "expired_used": 0,
+  "expired_used_note": "유효기간 지난 결과 사용 횟수. 현재 포맷은 valid_until 이 로그에 없어 검증기 EXPIRED 거부 수로 대신 본다"
+ },
+ "B3": {
+  "segments": [
+   {
+    "state": "recover",
+    "t0_s": 0.0,
+    "t1_s": 2.999,
+    "dur_ms": 3000.0,
+    "iter0": 0
+   },
+   {
+    "state": "fresh",
+    "t0_s": 3.0,
+    "t1_s": 22.79,
+    "dur_ms": 19791.0,
+    "iter0": 3000
+   },
+   {
+    "state": "hold",
+    "t0_s": 22.791,
+    "t1_s": 34.999,
+    "dur_ms": 12209.000000000002,
+    "iter0": 22791
+   }
+  ],
+  "n_abnormal_segments": 2,
+  "a1_miss_during_abnormal": 0
+ },
+ "B2": {
+  "basis": "q_cmd 3차 차분 (명령 미분)",
+  "jerk_rad_s3": {
+   "n": 34997,
+   "unit": "rad/s³",
+   "min": 0.0,
+   "avg": 1114.3736980041579,
+   "p50": 238.41857910156247,
+   "p99": 20027.16064453125,
+   "p999": 29921.53167724609,
+   "max": 30040.74096679687
+  },
+  "track_err_rad": {
+   "n": 35000,
+   "unit": "rad",
+   "min": 0.0,
+   "avg": 5.414219493821812e-05,
+   "p50": 3.933906555175781e-06,
+   "p99": 0.0005929470062255859,
+   "p999": 0.0006622077226638799,
+   "max": 0.000676274299621582
+  }
+ },
+ "state_ticks": {
+  "fresh": 19791,
+  "hold": 12209,
+  "recover": 3000
+ }
+}
